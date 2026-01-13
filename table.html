@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+.body1{
+    border-radius:10px;
+    border:2px solid purple;
+    width:100%;
+    /* border-collapse: separate; */
+    border-collapse: collapse;
+    border-spacing: 1em 0.5em;
+    
+}
+td{
+    text-align: center;
+    border:1px solid black;
+    height:100px;
+    vertical-align: middle; 
+    /* width: 1.5em;
+    height: 1.5em;
+    border: 1px solid black;
+    text-align: center;
+    vertical-align: middle;
+    border-bottom: 2px solid black; */
+    
+}
+td:hover{
+    background-color:blue;
+    transform: scale(0.9)
+    
+}
+/* .box1{
+    border-right:2px solid black;
+} */
+tr:nth-child(odd){
+    background-color:violet
+}
+tr:nth-child(even) {
+            background-color: rgba(4, 175, 47, 0.4);
+        }
+th{
+    font-size: 60px;
+}
+.responsive-table {
+            width: 100%;
+            border-collapse: collapse;
+            overflow-x: auto;
+            display: block;
+        }
+
+        .responsive-table th, .responsive-table td {
+            text-align: left;
+            padding: 8px;
+            border: 1px solid #ddd;
+        }
+
+        .responsive-table th {
+            background-color: #f2f2f2;
+        }
+
+        .responsive-table tr:nth-child(odd) {
+            background-color: #f9f9f9;
+        }
+</style>
+</head>
+<body>
+    <table class="body1">
+    <!-- <table style="table-layout: fixed;"> -->
+        <tr>
+            <th class="box1">Header1</th>
+            <th>Header2</th>
+            <th>Header3</th>
+        </tr>
+        <tr>
+            <td class="box1">Data1</td>
+            <td>Data2</td>
+            <td>Data3</td>
+        </tr>
+        <tr>
+            <td class="box1">Data4</td>
+            <td>Data5</td>
+            <td>Data6</td>
+        </tr>
+        <tr>
+            <td class="box1">Data7</td>
+            <td>Data8</td>
+            <td>Data9</td>
+        </tr>
+    </table>
+    <!-- <h2> border-collapse: collapse </h2>
+    <table style="border-collapse: collapse;">
+    <tr>
+        <th>Header 1</th>
+        <th>Header 2</th>
+        <th>Header 3</th>
+    </tr>
+
+    <tr>
+        <td> Data 1</td>
+        <td> Data 2</td>
+        <td> Data 3</td>
+    </tr>
+
+    <tr>
+        <td> Data 1</td>
+        <td> Data 2</td>
+        <td> Data 3</td>
+    </tr> -->
+    
+    <h2>Responsive Table</h2>
+    <table class="responsive-table">
+        <thead>
+            <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+                <th>Header 3</th>
+                <th>Header 4</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Data 1</td>
+                <td>Data 2</td>
+                <td>Data 3</td>
+                <td>Data 4</td>
+            </tr>
+
+            <tr>
+                <td>Data 5</td>
+                <td>Data 6</td>
+                <td>Data 7</td>
+                <td>Data 8</td>
+            </tr>
+
+            <tr>
+                <td>Data 9</td>
+                <td>Data 10</td>
+                <td>Data 11</td>
+                <td>Data 12</td>
+            </tr>
+        </tbody>
+</body>
+</html>
