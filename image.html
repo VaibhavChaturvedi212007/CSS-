@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    /* img{
+        width:300px;
+        height:300px;
+        border-radius:50px;
+        border:2px solid red;
+        border:7px solid black;
+    } */
+     /* .body1{
+        width:100px;
+        height:300px;
+        background-color: white;
+        box-shadow:0 3px 6px 0 grey, 0 8px 16px 0 black;
+        margin-bottom:25px;
+        margin: 20px;
+     }
+     img{
+        width:100px;
+        height:150px;
+     }
+     .box{
+        text-align: center;
+        padding:5px;
+     } */
+    /* .container{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        height:300px;
+        border:2px solid black;
+    }
+    img{
+        max-width: 100px;
+        height:auto;
+        border:1px solid ;
+    } */
+/* .container{
+    position: relative;
+    border:2px solid black;
+}
+.center{
+    position: absolute;
+    top:45%;
+    width:100%;
+    text-align: center;
+}
+.top-left {
+            position: absolute;
+            top: 12px;
+            left: 30px;
+        }
+        .top-right {
+            position: absolute;
+            top: 12px;
+            right: 30px;
+        }
+        .bottom-left {
+            position: absolute;
+            bottom: 12px;
+            left: 30px;
+        }
+        .bottom-right {
+            position: absolute;
+            bottom: 12px;
+            right: 30px;
+        }
+        img {
+            width: 100%;
+            opacity: 0.7;
+        } */
+.container{
+    position:relative;
+    width:250px;
+}
+.body1{
+    position:relative;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.7);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+.box1{
+    color:red;
+    font-weight: bold;
+    font-size: 25px;
+    position:absolute;
+    top:40%;
+    left:20%;
+}
+.container:hover .body1{
+    opacity:1;
+}
+img {
+    width: 100%;
+    height: 200px;
+        display: block;
+}
+</style>
+</head>
+<body>
+    <!-- <img src="https://pngimg.com/uploads/pokemon/pokemon_PNG111.png" > -->
+     <!-- <h4>Blur Filter</h4>
+    <img style="filter: blur(3px);" src="https://pngimg.com/uploads/pokemon/pokemon_PNG111.png">
+
+    <h4>Invert Filter</h4>
+    <img style="filter: invert(110%);" src="https://pngimg.com/uploads/pokemon/pokemon_PNG111.png">
+
+    <h4>Saturate Filter</h4>
+    <img style="filter: saturate(8);" src="https://pngimg.com/uploads/pokemon/pokemon_PNG111.png">
+
+    <h4>Sepia Filter</h4>
+    <img style="filter: sepia(110%);" src="https://pngimg.com/uploads/pokemon/pokemon_PNG111.png"> -->
+    <!-- <div class="body1">
+        <img src="https://pngimg.com/uploads/pokemon/pokemon_PNG111.png">
+        <div class="box">
+            pokemon
+        </div>
+    </div> -->
+
+
+
+    <!-- *********justify-content: center: This will center image horizontally
+        align-items: center: This will center image vertically ****-->
+
+        <!-- <div class="container">
+            <img src="https://pngimg.com/uploads/pokemon/pokemon_PNG111.png">
+        </div> -->
+    
+    
+        <!-- ******Text Inside Image****** -->
+<!-- In CSS position property can be used to position text in different locations inside an image.
+First we need to set position property for image container as `position: relative` and
+position property of text as `position: absolute`. Now you can position of text elements
+using inset properties like top, bottom, right and left. -->
+<!-- <div class="container">
+        <img src="https://pngimg.com/uploads/pokemon/pokemon_PNG111.png" width="1000px" height="350px">
+
+        <h3 class="center">
+            Text at Center
+        </h3>
+        <h3 class="top-left">
+            Text at Top Left
+        </h3>
+        <h3 class="top-right">
+            Text at Top Right
+        </h3>
+        <h3 class="bottom-left">
+            Text at Bottom Left</h3>
+        <h3 class="bottom-right">
+            Text at Bottom Right
+        </h3>
+    </div> -->
+
+
+<!-- *************Image Fade In Overlay************** -->
+ <div class="container">
+    <div class="body1">
+        <div class="box1">Tutorial Point</div>
+    </div>
+    <img src="https://pngimg.com/uploads/pokemon/pokemon_PNG111.png">
+ </div>
+
+</body>
+</html>
